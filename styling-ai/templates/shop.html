@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shop Your Style</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-200">
+
+<h1 class="text-4xl font-bold text-center pt-10 mb-10">
+Shop Your Style
+</h1>
+
+<div class="grid grid-cols-3 gap-8 px-20 pb-20">
+
+{% if gender == "Male" %}
+
+<!-- Male Products -->
+
+<div class="bg-white p-8 rounded shadow text-center">
+<h2>Royal Blue Shirt</h2>
+<a href="https://www.amazon.in/s?k=royal+blue+shirt+men" target="_blank">
+<button class="bg-pink-500 text-white px-5 py-2 rounded mt-4">Shop Now</button>
+</a>
+</div>
+
+<div class="bg-white p-8 rounded shadow text-center">
+<h2>Deep Purple Formal</h2>
+<a href="https://www.amazon.in/s?k=purple+formal+shirt+men" target="_blank">
+<button class="bg-pink-500 text-white px-5 py-2 rounded mt-4">Shop Now</button>
+</a>
+</div>
+
+<div class="bg-white p-8 rounded shadow text-center">
+<h2>Black Chelsea Boots</h2>
+<a href="https://www.amazon.in/s?k=black+chelsea+boots+men" target="_blank">
+<button class="bg-pink-500 text-white px-5 py-2 rounded mt-4">Shop Now</button>
+</a>
+</div>
+
+{% elif gender == "Female" %}
+
+<!-- Female Products -->
+
+<div class="bg-white p-8 rounded shadow text-center">
+<h2>Pink Party Dress</h2>
+<a href="https://www.amazon.in/s?k=pink+party+dress+women" target="_blank">
+<button class="bg-pink-500 text-white px-5 py-2 rounded mt-4">Shop Now</button>
+</a>
+</div>
+
+<div class="bg-white p-8 rounded shadow text-center">
+<h2>Red Evening Gown</h2>
+<a href="https://www.amazon.in/s?k=red+evening+gown+women" target="_blank">
+<button class="bg-pink-500 text-white px-5 py-2 rounded mt-4">Shop Now</button>
+</a>
+</div>
+
+<div class="bg-white p-8 rounded shadow text-center">
+<h2>High Heel Sandals</h2>
+<a href="https://www.amazon.in/s?k=high+heels+women" target="_blank">
+<button class="bg-pink-500 text-white px-5 py-2 rounded mt-4">Shop Now</button>
+</a>
+</div>
+
+{% endif %}
+
+</div>
+
+</body>
+</html>
